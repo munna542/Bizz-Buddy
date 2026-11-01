@@ -1,0 +1,60 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice Johnson", "email": "alice@bizz.com", "password": "pass123", "role": "Owner", "phone": "555-0101" },
+    { "id": 2, "name": "Bob Smith", "email": "bob@bizz.com", "password": "pass123", "role": "Manager", "phone": "555-0102" },
+    { "id": 3, "name": "Carol Lee", "email": "carol@bizz.com", "password": "pass123", "role": "Staff", "phone": "555-0103" },
+    { "id": 4, "name": "David Kim", "email": "david@bizz.com", "password": "pass123", "role": "Staff", "phone": "555-0104" },
+    { "id": 5, "name": "Elena Rossi", "email": "elena@bizz.com", "password": "pass123", "role": "Admin", "phone": "555-0105" },
+    { "id": 999, "name": "System Admin", "email": "admin@bizz.com", "password": "admin123", "role": "Admin", "phone": "555-0000" }
+  ],
+  "categories": [
+    { "id": 1, "name": "Electronics" },
+    { "id": 2, "name": "Office Supplies" },
+    { "id": 3, "name": "Furniture" },
+    { "id": 4, "name": "Books" },
+    { "id": 5, "name": "Accessories" }
+  ],
+  "products": [
+    { "id": 101, "name": "Wireless Mouse", "price": 25.99, "category_id": 1 },
+    { "id": 102, "name": "Notebook Pro", "price": 9.49, "category_id": 2 },
+    { "id": 103, "name": "Desk Lamp", "price": 42.00, "category_id": 3 },
+    { "id": 104, "name": "Business Planner", "price": 18.75, "category_id": 4 },
+    { "id": 105, "name": "Laptop Stand", "price": 35.50, "category_id": 5 }
+  ],
+  "inventory": [
+    { "product_id": 101, "quantity": 23, "reorder_level": 10, "last_updated": "2026-04-10" },
+    { "product_id": 102, "quantity": 8, "reorder_level": 15, "last_updated": "2026-04-11" },
+    { "product_id": 103, "quantity": 12, "reorder_level": 5, "last_updated": "2026-04-09" },
+    { "product_id": 104, "quantity": 30, "reorder_level": 12, "last_updated": "2026-04-12" },
+    { "product_id": 105, "quantity": 7, "reorder_level": 8, "last_updated": "2026-04-08" }
+  ],
+  "customers": [
+    { "id": 201, "name": "TechCorp", "email": "contact@techcorp.com", "phone": "555-2001" },
+    { "id": 202, "name": "PaperStreet", "email": "orders@paperstreet.co", "phone": "555-2002" },
+    { "id": 203, "name": "HomeOffice Inc", "email": "hello@homeoffice.com", "phone": "555-2003" },
+    { "id": 204, "name": "BookNook", "email": "buy@booknook.net", "phone": "555-2004" },
+    { "id": 205, "name": "Urban Desk", "email": "sales@urbandesk.io", "phone": "555-2005" }
+  ],
+  "sales": [
+    { "id": 301, "user_id": 2, "customer_id": 201, "date": "2026-04-01", "total_amount": 109.96 },
+    { "id": 302, "user_id": 3, "customer_id": 202, "date": "2026-04-02", "total_amount": 51.99 },
+    { "id": 303, "user_id": 1, "customer_id": 203, "date": "2026-04-03", "total_amount": 84.50 },
+    { "id": 304, "user_id": 2, "customer_id": 204, "date": "2026-04-05", "total_amount": 37.50 },
+    { "id": 305, "user_id": 4, "customer_id": 205, "date": "2026-04-07", "total_amount": 25.99 }
+  ],
+  "saleItems": [
+    { "id": 401, "sale_id": 301, "product_id": 101, "quantity": 2, "price": 25.99 },
+    { "id": 402, "sale_id": 301, "product_id": 103, "quantity": 1, "price": 42.00 },
+    { "id": 403, "sale_id": 302, "product_id": 102, "quantity": 3, "price": 9.49 },
+    { "id": 404, "sale_id": 303, "product_id": 105, "quantity": 2, "price": 35.50 },
+    { "id": 405, "sale_id": 304, "product_id": 104, "quantity": 2, "price": 18.75 },
+    { "id": 406, "sale_id": 305, "product_id": 101, "quantity": 1, "price": 25.99 }
+  ],
+  "expenses": [
+    { "id": 501, "description": "Office rent", "amount": 1200.00, "category": "Rent", "date": "2026-04-01" },
+    { "id": 502, "description": "Printer ink", "amount": 89.99, "category": "Supplies", "date": "2026-04-03" },
+    { "id": 503, "description": "Internet bill", "amount": 79.99, "category": "Utilities", "date": "2026-04-05" },
+    { "id": 504, "description": "Marketing ads", "amount": 250.00, "category": "Marketing", "date": "2026-04-07" },
+    { "id": 505, "description": "Software subscription", "amount": 29.90, "category": "Software", "date": "2026-04-09" }
+  ]
+}
